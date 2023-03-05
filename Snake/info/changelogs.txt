@@ -1,0 +1,27 @@
+Changelogs:
+Please note: The first changes haven't been recorded. Also, minor changes are being ignored as well.
+
+v.1.0.1.2  Fixed bomb-food-bug
+v.1.0.2.0 Added leaderboard
+v.1.0.2.1 Fixed difficulty-bug
+v.1.0.2.2 Changed changelogs path
+v.1.0.2.3 Changed data's path
+v.1.0.2.4 Fixed cursor when pausemenu is closed
+v.1.0.2.5 Improved performance of pausemenu
++o[---v.1.1---]o+
+v.1.1.0.0 Added leaderboard-insert
+v.1.1.0.1 Fixed leaderboard-insert-bug
+v.1.1.0.2 Food doenst spawn in segments anymore
+v.1.1.1.0_a Added first sound effect (alpha)
+v.1.1.1.0 Fixed soundbug
+v.1.1.1.1 Fixed buttonclickbug
+v.1.1.1.2 Better leaderboard (time is in hover-event)
+v.1.1.1.3 Added difficulty to leaderboard
++o[---v.1.2---]o+
+v.1.2.0.0 Added all Sounds
++o[---v.1.3---]o+
+v.1.3.0.0 Added music
+v.1.3.0.1 fixed musicglitches
+v.1.3.0.2 fixed soundglitch
+v.1.3.0.3 fixed bombglitch on exit
+v.1.3.1.0 added more sounds

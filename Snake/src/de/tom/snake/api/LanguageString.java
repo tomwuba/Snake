@@ -1,0 +1,50 @@
+package de.tom.snake.api;
+
+public abstract class LanguageString {
+	
+	// English Names
+	public static final String[] menu_button_play_name = {"Play", "Start"},
+								 menu_button_settings_name = {"Settings", "Einstellungen"},
+								 menu_button_leaderboard_name = {"Leaderboard", "Bestenliste"},
+								 menu_button_exit_name = {"Exit", "Verlassen"},
+								 dead_text = {"You died!", "Du bist gestorben!"},
+								 dead_text_game_ended = {"Game ended.", "Spiel beendet."},
+								 dead_text_bomb = {"You ate a bomb!", "Du hast eine Bombe gegessen!"},
+								 dead_text_bomb_alternate_1 = {"BOOOOM!", "BOOOOOM!"},
+								 dead_text_bomb_alternate_2 = {"You found a mine!", "Du hast eine Landmine gefunden!"},									 
+								 menu_text_score = {"Your score: ", "Dein Score: "},
+								 menu_text_author = {"Made by tom_wuba", "Programmiert von tom_wuba"},
+								
+								 settings_text_soundeffects = {"Soundeffects: ", "Sounfeffekte: "},
+								 settings_text_music = {"Music: ", "Musik: "},
+								 settings_text_difficulty = {"Difficulty: ", "Schwierigkeit: "},
+								 settings_text_language = {"Language: ", "Sprache: "},
+								 language_names = {"English", "Deutsch"},
+								 general_error = {"Error", "Fehler"},
+								 general_back = {"Back", "Zurueck"},
+								 difficulty_easy = {"Easy", "Einfach"},
+								 difficulty_classic = {"Classic", "Klassisch"},
+								 difficulty_normal = {"Normal", "Normal"},
+								 difficulty_hard = {"Hard", "Schwer"},
+								 difficulty_extreme = {"Extreme", "Extrem"},
+								 pause_button_back_to_game = {"Back to game", "Zurueck zum Spiel"},
+								 pause_button_help = {"Help", "Hilfe"},
+								 pause_button_end_the_game = {"Quit game", "Spiel beenden."},
+								 help_text = {"Help:\nUse the arrowkeys to controll the snake\nto eat fruits to grow bigger. Also,\nensure to not hit the bombs if\nyour gamedifficulty allows them to spawn.",
+										 "Hilfe\nKontrolliere die Snake mit den Pfeiltasten.\nVersuche, die roten Fruechte zu essen. Je\nnach Schwierigkeit, gibt es zudem noch\ngraue Bomben, welche die Snake sofort toeten."},
+								 leaderboard_text_title = {"Leaderboard", "Bestenliste"},
+								 leaderboard_text_empty = {"Empty", "Leer"},
+								 leaderboard_date_pattern = {"MM/dd/yyyy", "dd.MM.yyyy"},
+								 leaderboard_time_pattern = {"HH:mm:ss", "HH:mm:ss"},
+								 leaderboard_time_text = {"date: ", "Datum: "},
+								 leaderboard_difficulty_text = {"Difficulty: ", "Schwierigkeit: "},
+								 leaderboard_insert_new_highscore = {"You reached a new highscore of: %highscore%", "Du hast einen Highscore von %highscore% erziehlt."},
+								 leaderboard_button_save = {"Save", "Speichern"},
+								 leaderboard_button_skip = {"Skip", "Ueberspringen"},
+								 leaderboard_button_yes = {"Yes", "Ja"},
+								 leaderboard_button_no = {"No", "Nein"},
+								 leaderboard_insert_exit_text = {"Exit without saving?", "Ohne speichern verlassen?"},
+								 leaderboard_button_clear = {"Clear", "Loeschen"},
+							     leaderboard_clear_text = {"Clear the leaderboard?", "Bestenliste leeren?"};
+
+}
