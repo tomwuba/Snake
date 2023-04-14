@@ -96,9 +96,9 @@ public class Main {
 	
 	public String status = "";
 	
-	public String version = "v.1.3.1.0";
+	public String version = "v.1.3.2.0";
 	
-	public String latest = "added more sounds";
+	public String latest = "edited hotkeys";
 	
 	public Leaderboard leaderBoard;
 	
@@ -313,6 +313,8 @@ public class Main {
 			fileWriter.write("v.1.3.0.2 fixed soundglitch\n");
 			fileWriter.write("v.1.3.0.3 fixed bombglitch on exit\n");
 			fileWriter.write("v.1.3.1.0 added more sounds\n");
+			fileWriter.write("v.1.3.2.0 edited hotkeys\n");
+			
 			fileWriter.flush();
 			fileWriter.close();
 		} catch (IOException e1) {
