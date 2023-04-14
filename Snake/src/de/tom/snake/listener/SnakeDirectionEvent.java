@@ -60,9 +60,33 @@ public class SnakeDirectionEvent implements KeyListener{
 			
 			return;
 		}
+		if(main.settings.isOpen() && e.getKeyCode() == 27) {
+			main.settings.close();
+			if(main.settings.getSoundVolume() > 0) {
+				new SoundAPI().playSound(main.backSoundFile, (int) main.settings.getSoundVolume());
+			}
+		}
+		if(main.leaderBoard.isOpen() && e.getKeyCode() == 27) {
+			if(main.leaderBoard.leaderboardClear.isOpen()) {
+				main.leaderBoard.leaderboardClear.close();
+				if(main.settings.getSoundVolume() > 0) {
+					new SoundAPI().playSound(main.backSoundFile, (int) main.settings.getSoundVolume());
+				}
+				return;
+			}
+			main.leaderBoard.close();
+			if(main.settings.getSoundVolume() > 0) {
+				new SoundAPI().playSound(main.backSoundFile, (int) main.settings.getSoundVolume());
+			}
+			return;
+		}
+		
 		if(main.isPauseMenu) {
 			if(main.pauseMenu.helpMenu.isOpen()) {
 				main.pauseMenu.helpMenu.close();
+				if(main.settings.getSoundVolume() > 0) {
+					new SoundAPI().playSound(main.backSoundFile, (int) main.settings.getSoundVolume());
+				}
 				return;
 			}
 		
@@ -79,7 +103,7 @@ public class SnakeDirectionEvent implements KeyListener{
 				}
 				
 			}
-			if(e.getKeyCode() != 32 && e.getKeyCode() != 80) {
+			if(e.getKeyCode() != 32 && e.getKeyCode() != 80 && e.getKeyCode() != 113) {
 				return;
 			}
 			if(main.settings.getMusicVolume() > 0) {
