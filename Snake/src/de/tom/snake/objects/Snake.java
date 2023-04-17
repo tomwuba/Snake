@@ -16,6 +16,7 @@ public class Snake {
 	int y;
 	int length;
 	int direction = SnakeDirection.NORTH;
+	int nextdirection = SnakeDirection.NORTH;
 	Main main;
 	
 	ArrayList<Segment> segments = new ArrayList<>();
@@ -30,7 +31,7 @@ public class Snake {
 	}
 	
 	public void draw(Graphics graphics) {
-	
+		direction = nextdirection;
 		// Remove segments if they are not part of the snake anymore
 		
 		// This removes the Health of each segment, in fact it adds 1 to every segment, till the segment number is the lenght of the snake.
@@ -131,7 +132,7 @@ public class Snake {
 			}
 			break;
 		}
-		direction = newDirection;
+		nextdirection = newDirection;
 	}
 	
 	
