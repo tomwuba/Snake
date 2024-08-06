@@ -31,6 +31,7 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 import de.tom.snake.api.Difficulty;
+import de.tom.snake.api.Language;
 import de.tom.snake.help.HelpMenu;
 import de.tom.snake.leaderboard.Leaderboard;
 import de.tom.snake.leaderboard.LeaderboardInsert;
@@ -139,6 +140,16 @@ public class Main {
 	
 	
 	public Main() {
+		ProcessHandle currentProcess = ProcessHandle.current();
+
+	    // Get the PID of the current process
+		ProcessBuilder pb = new ProcessBuilder("java", "-jar", "SnakeUpdater.jar", version, "" + ProcessHandle.current().pid());
+        try {
+			Process process = pb.start();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 		try {
 			pathToData = new File(URLDecoder.decode(Main.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "/..", "UTF-8")).getAbsolutePath();
 		} catch (UnsupportedEncodingException e2) {

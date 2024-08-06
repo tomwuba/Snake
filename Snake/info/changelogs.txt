@@ -25,3 +25,5 @@ v.1.3.0.1 fixed musicglitches
 v.1.3.0.2 fixed soundglitch
 v.1.3.0.3 fixed bombglitch on exit
 v.1.3.1.0 added more sounds
+v.1.3.2.0 edited hotkeys
+v.1.3.2.1 fixed deathbug

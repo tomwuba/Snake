@@ -1,4 +1,4 @@
-soundeffects: 19.0
+soundeffects: 26.0
 music: 100.0
-difficulty: 0
+difficulty: 4
 language: 1
